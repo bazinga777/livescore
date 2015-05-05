@@ -1,0 +1,28 @@
+
+{
+  "name": "Live Cric Feed",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Get live cricket scores",
+	"permissions": [
+    "notifications",
+    "http://static.cricinfo.com/*",
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css",
+    "tabs",
+    "http://*/*", 
+    "https://*/*"
+  ],
+  "icons": {
+  	"48":"cricket.png"
+  },
+  "background": {
+  	"page": "index.html",
+  	"script": "popup.js"
+  	//"persistent": false
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "browser_action": {
+    "default_icon": "cricket.png",
+    "default_popup": "index.html"
+  }
+}
